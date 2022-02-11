@@ -43,8 +43,9 @@ module "vpc" {
     }
 
     routes = [
-        {
-            name                   = "egress-internet"
+/*        
+{
+           name                   = "egress-internet"
             description            = "route through IGW to access internet"
             destination_range      = "0.0.0.0/0"
             tags                   = "egress-inet"
@@ -58,5 +59,6 @@ module "vpc" {
             next_hop_instance      = "app-proxy-instance"
             next_hop_instance_zone = "us-west1-a"
         },
+*/
     ]
 }
