@@ -1,6 +1,6 @@
 module "vpc" {
     source  = "app.terraform.io/saleh001-dev/network/google"
-    version = "~> 3.0"
+    version = "3.4.0"
 
     project_id   = var.project
     network_name = "gaurav-network"
