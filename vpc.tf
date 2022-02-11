@@ -1,4 +1,4 @@
-module "vpc" {
+module """ {
     source  = "terraform-google-modules/network/google"
     version = "~> 3.0"
 
@@ -8,8 +8,8 @@ module "vpc" {
 
     subnets = [
         {
-            subnet_name           = "subnet-01"
-            subnet_ip             = "10.10.10.0/24"
+            subnet_name           = "gaurav-subnet"
+            subnet_ip             = "10.100.10.0/24"
             subnet_region         = "us-west1"
         },
         {
